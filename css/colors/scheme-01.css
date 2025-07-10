@@ -1,9 +1,9 @@
 * {
   --primary-color: #1A144A;
   --primary-color-rgb: 42, 44, 163;
-  --secondary-color: #1A144A;
+  --secondary-color: #3b2e9d;
   --secondary-color-rgb: 121, 141, 122;
-  --background: #F8FBF3;
+  --background: #fff;
   --title-font-color: #1A144A;
   --body-font-color: #1A144A;
   --dark-body-font-color: rgba(255, 255, 255, .75);
@@ -15,5 +15,5 @@
   --bg-dark-3: #1A144A;
   --bg-dark-3-rgb: 26, 20, 74;
   --bg-grey: #F0F1F3;
-  --bg-light: #E1EBE2;
+  --bg-light: #EDEDED;
 }
