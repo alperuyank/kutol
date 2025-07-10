@@ -1,5 +1,5 @@
-window.addEventListener("load", function() {
-    window.addEventListener("scroll", function() {
+window.addEventListener("load", function () {
+    window.addEventListener("scroll", function () {
         let navbar = document.getElementById("navbarCustom");
         let menuItems = navbar.getElementsByClassName("menu-item");
         let btnMain = document.querySelectorAll('.btn-main');
@@ -7,81 +7,83 @@ window.addEventListener("load", function() {
 
         let primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
 
+        // Scroll sırasında hamburger stilini sıfırla (mobil bug fix)
+        if (hamburger) {
+            hamburger.style.backgroundColor = "transparent";
+            hamburger.style.borderRadius = "0";
+        }
+
         if (window.scrollY > 50) {
-            // Navbar background
             navbar.style.backgroundColor = "white";
 
-            // Menu items text color
             for (let item of menuItems) {
                 item.style.color = primaryColor;
             }
 
-            // Buttons
-            btnMain.forEach(function(button) {
+            btnMain.forEach(function (button) {
                 button.style.backgroundColor = "white";
                 button.style.color = primaryColor;
                 button.style.border = "1px solid " + primaryColor;
 
-                button.onmouseover = function() {
+                button.onmouseover = function () {
                     button.style.backgroundColor = primaryColor;
                     button.style.color = "white";
                 };
 
-                button.onmouseout = function() {
+                button.onmouseout = function () {
                     button.style.backgroundColor = "white";
                     button.style.color = primaryColor;
                 };
             });
 
-            // Hamburger menu button
             if (hamburger) {
                 hamburger.style.color = primaryColor;
-                hamburger.onmouseover = function() {
+                hamburger.onmouseover = function () {
                     hamburger.style.color = "white";
                     hamburger.style.backgroundColor = primaryColor;
+                    hamburger.style.borderRadius = '50%';
                 };
-                hamburger.onmouseout = function() {
+                hamburger.onmouseout = function () {
                     hamburger.style.color = primaryColor;
                     hamburger.style.backgroundColor = "transparent";
+                    hamburger.style.borderRadius = '0';
                 };
             }
 
         } else {
-            // Navbar background
             navbar.style.backgroundColor = primaryColor;
 
-            // Menu items text color
             for (let item of menuItems) {
                 item.style.color = "white";
             }
 
-            // Buttons
-            btnMain.forEach(function(button) {
+            btnMain.forEach(function (button) {
                 button.style.backgroundColor = primaryColor;
                 button.style.color = "white";
                 button.style.border = "none";
 
-                button.onmouseover = function() {
+                button.onmouseover = function () {
                     button.style.backgroundColor = "white";
                     button.style.color = primaryColor;
                 };
 
-                button.onmouseout = function() {
+                button.onmouseout = function () {
                     button.style.backgroundColor = primaryColor;
                     button.style.color = "white";
                 };
             });
 
-            // Hamburger menu button
             if (hamburger) {
                 hamburger.style.color = "white";
-                hamburger.onmouseover = function() {
+                hamburger.onmouseover = function () {
                     hamburger.style.color = primaryColor;
                     hamburger.style.backgroundColor = "white";
+                    hamburger.style.borderRadius = '50%';
                 };
-                hamburger.onmouseout = function() {
+                hamburger.onmouseout = function () {
                     hamburger.style.color = "white";
                     hamburger.style.backgroundColor = "transparent";
+                    hamburger.style.borderRadius = '0';
                 };
             }
         }
