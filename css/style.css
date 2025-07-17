@@ -136,6 +136,18 @@ section.px-4{
   object-fit: contain;
 }
 
+  .lang-switcher { cursor: pointer; margin-left: 10px; font-weight: bold; }
+  .lang-switcher:hover { color: #fff; }
+
+  .hovered:hover {
+    background-color: #f3ea91 !important;
+    color: black;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  } 
+
 /* ================================================== */
 
 

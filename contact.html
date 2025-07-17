@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
-    <title>Kutol Ambalaj - İletişim</title>
-    <link rel="icon" href="images/custom/kutol-logo.png" type="image/gif" sizes="16x16">
+    <title data-translate="page_title">Kutol Ambalaj - İletişim</title>
+    <link
+      rel="icon"
+      href="images/custom/kutol-logo.png"
+      type="image/gif"
+      sizes="16x16"
+    />
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta
-      content="Kutol Ambalaj - İletişim"
-      name="description"
-    />
+    <meta content="Kutol Ambalaj - İletişim" name="description" />
     <meta content="" name="keywords" />
     <meta content="" name="author" />
-    <!-- CSS Files
-    ================================================== -->
     <link
       href="css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,7 +22,6 @@
     <link href="css/plugins.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
-    <!-- color scheme -->
     <link
       id="colors"
       href="css/colors/scheme-01.css"
@@ -35,9 +34,7 @@
     <div id="wrapper">
       <a href="#" id="back-to-top"></a>
 
-      <!-- preloader begin -->
       <div id="de-loader"></div>
-      <!-- preloader end -->
       <header class="clone" id="navbarCustom">
         <div id="topbar">
           <div class="container">
@@ -47,13 +44,22 @@
                   <div class="d-flex">
                     <div class="topbar-widget me-3">
                       <a href="#"
-                        ><i class="icofont-clock-time"></i>Pazartesi - Cuma
-                        09.00 - 18.00</a
+                        ><i class="icofont-clock-time"></i
+                        ><span
+                          class="text-white"
+                          data-translate="topbar_working_hours"
+                          >Pazartesi - Cuma 09.00 - 18.00</span
+                        ></a
                       >
                     </div>
                     <div class="topbar-widget me-3">
                       <a href="#"
-                        ><i class="icofont-location-pin"></i>İzmir/Bornova</a
+                        ><i class="icofont-location-pin"></i
+                        ><span
+                          class="text-white"
+                          data-translate="topbar_location"
+                          >İzmir/Bornova</span
+                        ></a
                       >
                     </div>
                     <div class="topbar-widget me-3">
@@ -62,6 +68,36 @@
                         >info@kutolambalaj.com</a
                       >
                     </div>
+                  </div>
+
+                  <div class="d-flex align-items-center">
+                    <a class="lang-switcher" data-lang="tr" href="#">
+                      <img
+                        src="images/ui/tr.png"
+                        alt="TR"
+                        style="
+                          width: 16px;
+                          height: 11px;
+                          margin-right: 5px;
+                          vertical-align: middle;
+                        "
+                      />
+                      TR
+                    </a>
+                    <span class="text-white mx-2">|</span>
+                    <a class="lang-switcher" data-lang="en" href="#">
+                      <img
+                        src="images/ui/en.png"
+                        alt="EN"
+                        style="
+                          width: 16px;
+                          height: 11px;
+                          margin-right: 5px;
+                          vertical-align: middle;
+                        "
+                      />
+                      EN
+                    </a>
                   </div>
                 </div>
               </div>
@@ -93,34 +129,95 @@
                 <div class="de-flex-col header-col-mid">
                   <ul id="mainmenu">
                     <li>
-                      <a class="menu-item nav-text" href="index.html"
+                      <a
+                        class="menu-item nav-text"
+                        href="index.html"
+                        data-translate="nav_home"
                         >ANA SAYFA</a
                       >
                     </li>
                     <li>
-                      <a class="menu-item nav-text">ÜRÜNLERİMİZ</a>
+                      <a
+                        class="menu-item nav-text unclickable"
+                        data-translate="nav_products"
+                        >ÜRÜNLERİMİZ</a
+                      >
                       <ul>
-                        <li><a href="boxes.html">OFFSET BASKILI KUTULAR</a></li>
                         <li>
-                          <a href="stands.html">OFFSET BASKILI STANDLAR</a>
+                          <a
+                            class="menu-item nav-text hovered px-2 small"
+                            href="boxes.html"
+                            data-translate="nav_products_offset_boxes"
+                            >OFFSET BASKILI KUTULAR</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="menu-item nav-text hovered px-2 small"
+                            href="stands.html"
+                            data-translate="nav_products_offset_stands"
+                            >OFFSET BASKILI STANDLAR</a
+                          >
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <a class="menu-item nav-text" href="about.html"
+                      <a
+                        class="menu-item nav-text"
+                        href="about.html"
+                        data-translate="nav_about"
                         >HAKKIMIZDA</a
                       >
                     </li>
                     <li>
-                      <a class="menu-item nav-text" href="contact.html"
+                      <a
+                        class="menu-item nav-text"
+                        href="contact.html"
+                        data-translate="nav_contact"
                         >İLETİŞİM</a
                       >
+                    </li>
+
+                    <li class="d-lg-none">
+                      <div class="d-flex justify-content-center pt-3 pb-2">
+                        <a
+                          class="lang-switcher menu-item"
+                          data-lang="tr"
+                          href="#"
+                        >
+                          <img
+                            src="images/ui/tr.png"
+                            alt="TR"
+                            style="width: 20px; margin-right: 8px"
+                          />
+                          TR
+                        </a>
+                        <span
+                          class="mx-3"
+                          style="border-left: 1px solid #444"
+                        ></span>
+                        <a
+                          class="lang-switcher menu-item"
+                          data-lang="en"
+                          href="#"
+                        >
+                          <img
+                            src="images/ui/en.png"
+                            alt="EN"
+                            style="width: 20px; margin-right: 8px"
+                          />
+                          EN
+                        </a>
+                      </div>
                     </li>
                   </ul>
                 </div>
                 <div class="de-flex-col">
                   <div class="menu_side_area">
-                    <a href="contact.html" class="btn-main btn-line nav-text"
+                    <a
+                      href="contact.html"
+                      class="btn-main btn-line nav-text"
+                      data-translate="nav_button_contact"
                       >BİZE ULAŞIN</a
                     >
                     <span id="menu-btn"></span>
@@ -131,24 +228,23 @@
           </div>
         </div>
       </header>
-      <!-- content begin -->
       <div class="no-bottom no-top" id="content">
         <div id="top"></div>
         <section id="subheader" class="relative jarallax text-light">
-          <img
-            src="images/custom/kutol-banner.jpg"
-            class="jarallax-img"
-            alt=""
-          />
+          <img src="images/custom/slider-2.jpg" class="jarallax-img" alt="" />
           <div class="container relative z-index-1000">
             <div class="row">
               <div class="col-lg-6">
                 <ul class="crumb">
-                  <li><a href="index.html">Anasayfa</a></li>
-                  <li class="active">İletişim</li>
+                  <li>
+                    <a href="index.html" data-translate="nav_home">Anasayfa</a>
+                  </li>
+                  <li class="active" data-translate="nav_contact">İletişim</li>
                 </ul>
-                <h1 class="text-uppercase">İLETİŞİM</h1>
-                <p class="col-lg-10 lead">
+                <h1 class="text-uppercase" data-translate="contact_main_title">
+                  İLETİŞİM
+                </h1>
+                <p class="col-lg-10 lead" data-translate="contact_intro_text">
                   Kutol Ambalaj olarak her türlü ambalaj ihtiyacınızda
                   yanınızdayız.
                 </p>
@@ -168,9 +264,11 @@
           <div class="container">
             <div class="row g-4">
               <div class="col-lg-6">
-                <h3 class="wow fadeInUp">Bize Mesaj Bırakın</h3>
+                <h3 class="wow fadeInUp" data-translate="contact_form_title">
+                  Bize Mesaj Bırakın
+                </h3>
 
-                <p>
+                <p data-translate="contact_form_intro">
                   Ofset baskılı kutu, sıvama koli, büyük ebatlı ambalaj
                   çözümleri ve özel tasarımlar hakkında bilgi almak, fiyat
                   teklifi istemek veya numune talebinde bulunmak için bize
@@ -183,21 +281,29 @@
                   <div class="row g-2">
                     <div class="col-sm-6">
                       <div
-                        class="h-100  relative"
+                        class="h-100 relative"
                         data-bgimage="url(images/custom/contact.jpg)"
                       ></div>
                     </div>
-                    <div class="col-sm-6 ">
+                    <div class="col-sm-6">
                       <div class="p-30">
-                        <div class="fw-bold text-dark">
+                        <div
+                          class="fw-bold text-dark"
+                          data-translate="contact_working_hours_title"
+                        >
                           <i class="icofont-clock-time me-2 id-color-2"></i
                           >Çalışma Saatlerimiz
                         </div>
-                        Pazartesi - Cuma 09.00 - 18.00
+                        <span data-translate="contact_working_hours_text"
+                          >Pazartesi - Cuma 09.00 - 18.00</span
+                        >
 
                         <div class="spacer-20"></div>
 
-                        <div class="fw-bold text-dark">
+                        <div
+                          class="fw-bold text-dark"
+                          data-translate="contact_address_label"
+                        >
                           <i class="icofont-location-pin me-2 id-color-2"></i
                           >Adres
                         </div>
@@ -205,7 +311,10 @@
 
                         <div class="spacer-20"></div>
 
-                        <div class="fw-bold text-dark">
+                        <div
+                          class="fw-bold text-dark"
+                          data-translate="contact_phone_label"
+                        >
                           <i class="icofont-phone me-2 id-color-2"></i>Bizi
                           arayın
                         </div>
@@ -213,7 +322,10 @@
 
                         <div class="spacer-20"></div>
 
-                        <div class="fw-bold text-dark">
+                        <div
+                          class="fw-bold text-dark"
+                          data-translate="contact_email_label"
+                        >
                           <i class="icofont-envelope me-2 id-color-2"></i>
                           Mesaj Bırakın
                         </div>
@@ -239,6 +351,7 @@
                         name="name"
                         id="name"
                         class="form-control"
+                        data-translate-placeholder="form_placeholder_name"
                         placeholder="İsim"
                         required
                       />
@@ -250,7 +363,8 @@
                         name="email"
                         id="email"
                         class="form-control"
-                        placeholder="Soy İsim"
+                        data-translate-placeholder="form_placeholder_email"
+                        placeholder="E-posta Adresiniz"
                         required
                       />
                     </div>
@@ -261,6 +375,7 @@
                         name="phone"
                         id="phone"
                         class="form-control"
+                        data-translate-placeholder="form_placeholder_phone"
                         placeholder="Telefon Numarası"
                         required
                       />
@@ -271,6 +386,7 @@
                         name="message"
                         id="message"
                         class="form-control"
+                        data-translate-placeholder="form_placeholder_message"
                         placeholder="Mesajınız"
                         required
                       ></textarea>
@@ -284,16 +400,25 @@
                       <input
                         type="submit"
                         id="send_message"
-                        value="Gönder"
                         class="btn-main"
+                        data-translate-value="form_button_send"
+                        value="Gönder"
                       />
                     </div>
 
-                    <div id="success_message" class="success">
+                    <div
+                      id="success_message"
+                      class="success"
+                      data-translate="form_success_message"
+                    >
                       Mesajınız başarıyla gönderildi. Daha fazla mesaj göndermek
                       istiyorsanız bu sayfayı yenileyin.
                     </div>
-                    <div id="error_message" class="error">
+                    <div
+                      id="error_message"
+                      class="error"
+                      data-translate="form_error_message"
+                    >
                       Üzgünüz, formunuzu gönderirken bir hata oluştu.
                     </div>
                   </form>
@@ -303,14 +428,13 @@
           </div>
         </section>
       </div>
-      <!-- content end -->
       <footer class="section-dark">
         <div class="container relative z-2">
           <div class="row gx-5">
             <div class="col-lg-4 col-sm-6">
               <img src="images/custom/kutol-logo.png" class="w-150px" alt="" />
               <div class="spacer-20"></div>
-              <p>
+              <p data-translate="footer_about_text">
                 20 yıllık tecrübemizle, büyük ebatlı ve yüksek kaliteli ofset
                 kutu, ofset koli, sıvama kutu ve sıvama koli üretimi yapıyoruz.
                 Marka değerinizi ambalajla büyütmek için buradayız.
@@ -320,12 +444,28 @@
               <div class="row">
                 <div class="col-lg-6 col-sm-6">
                   <div class="widget">
-                    <h5>Kutol Ambalaj</h5>
+                    <h5 data-translate="footer_widget_title">Kutol Ambalaj</h5>
                     <ul>
-                      <li><a href="index.html">ANA SAYFA</a></li>
-                      <li><a href="boxes.html">ÜRÜNLERİMİZ</a></li>
-                      <li><a href="about.html">HAKKIMIZDA</a></li>
-                      <li><a href="contact.html">İLETİŞİM</a></li>
+                      <li>
+                        <a href="index.html" data-translate="nav_home"
+                          >ANA SAYFA</a
+                        >
+                      </li>
+                      <li>
+                        <a href="boxes.html" data-translate="nav_products"
+                          >ÜRÜNLERİMİZ</a
+                        >
+                      </li>
+                      <li>
+                        <a href="about.html" data-translate="nav_about"
+                          >HAKKIMIZDA</a
+                        >
+                      </li>
+                      <li>
+                        <a href="contact.html" data-translate="nav_contact"
+                          >İLETİŞİM</a
+                        >
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -335,47 +475,33 @@
               <div class="widget">
                 <div class="fw-bold text-white">
                   <i class="icofont-clock-time me-2 id-color-2 text-light"></i
-                  >Çalışma Saatlerimiz
+                  ><span data-translate="footer_working_hours_title"
+                    >Çalışma Saatlerimiz</span
+                  >
                 </div>
-                Pazartesi - Cuma 08.00 - 18.00
-
+                <span data-translate="footer_working_hours_text"
+                  >Pazartesi - Cuma 08.00 - 18.00</span
+                >
                 <div class="spacer-20"></div>
-
                 <div class="fw-bold text-white">
                   <i class="icofont-location-pin me-2 id-color-2 text-light"></i
-                  >Adres
+                  ><span data-translate="footer_address_title">Adres</span>
                 </div>
-                Egemenlik Mahallesi 6102/22 Sokak No:20 Bornova/İzmir
-
+                <span data-translate="footer_address_text"
+                  >Egemenlik Mahallesi 6102/22 Sokak No:20 Bornova/İzmir</span
+                >
                 <div class="spacer-20"></div>
-
                 <div class="fw-bold text-white">
                   <i class="icofont-envelope me-2 id-color-2 text-light"></i
-                  >Mesaj Bırakın
+                  ><span data-translate="footer_contact_title"
+                    >Mesaj Bırakın</span
+                  >
                 </div>
                 info@kutolambalaj.com
               </div>
             </div>
           </div>
         </div>
-        <!--
-            <div class="subfooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="de-flex">
-                                <div class="de-flex-col">
-                                    Copyright 2024 - Gardyn by Designesia
-                                </div>
-                                <ul class="menu-simple">
-                                    <li><a href="#">Terms &amp; Conditions</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
         <img
           src="images/misc/silhuette-1-black.webp"
           class="abs bottom-0 op-3"
@@ -383,11 +509,10 @@
         />
       </footer>
     </div>
-    <!-- Javascript Files
-    ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
     <script src="js/validation-contact.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/translator.js"></script>
   </body>
 </html>

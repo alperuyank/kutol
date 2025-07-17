@@ -1,0 +1,41 @@
+{
+  "page_title": "Kutol Packaging - Contact",
+
+  "topbar_working_hours": "Monday - Friday 09.00 - 18.00",
+  "topbar_location": "Izmir/Bornova",
+
+  "nav_home": "HOME",
+  "nav_products": "OUR PRODUCTS",
+  "nav_products_offset_boxes": "OFFSET PRINTED BOXES",
+  "nav_products_offset_stands": "OFFSET PRINTED STANDS",
+  "nav_about": "ABOUT US",
+  "nav_contact": "CONTACT",
+  "nav_button_contact": "CONTACT US",
+  
+  "contact_main_title": "CONTACT",
+  "contact_intro_text": "As Kutol Packaging, we are with you for all your packaging needs.",
+  
+  "contact_form_title": "Leave Us a Message",
+  "contact_form_intro": "You can contact us to get information about offset printed boxes, lamination parcels, large-size packaging solutions, and custom designs, to request a price quote, or to request samples.",
+
+  "contact_working_hours_title": "Our Working Hours",
+  "contact_working_hours_text": "Monday - Friday 09.00 - 18.00",
+  "contact_address_label": "Address",
+  "contact_phone_label": "Call Us",
+  "contact_email_label": "Leave a Message",
+
+  "form_placeholder_name": "Name",
+  "form_placeholder_email": "Email Address",
+  "form_placeholder_phone": "Phone Number",
+  "form_placeholder_message": "Your Message",
+  "form_button_send": "Send",
+  "form_success_message": "Your message has been sent successfully. Please refresh this page if you want to send more messages.",
+  "form_error_message": "Sorry, an error occurred while sending your form.",
+
+  "footer_about_text": "With our 20 years of experience, we produce large-sized and high-quality offset boxes, offset cartons, lamination boxes, and lamination cartons. We are here to grow your brand value with packaging.",
+  "footer_widget_title": "Kutol Packaging",
+  "footer_working_hours_title": "Working Hours",
+  "footer_working_hours_text": "Monday - Friday 08.00 - 18.00",
+  "footer_address_title": "Address",
+  "footer_contact_title": "Leave a Message"
+}

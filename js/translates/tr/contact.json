@@ -1,0 +1,41 @@
+{
+  "page_title": "Kutol Ambalaj - İletişim",
+
+  "topbar_working_hours": "Pazartesi - Cuma 09.00 - 18.00",
+  "topbar_location": "İzmir/Bornova",
+
+  "nav_home": "ANA SAYFA",
+  "nav_products": "ÜRÜNLERİMİZ",
+  "nav_products_offset_boxes": "OFFSET BASKILI KUTULAR",
+  "nav_products_offset_stands": "OFFSET BASKILI STANDLAR",
+  "nav_about": "HAKKIMIZDA",
+  "nav_contact": "İLETİŞİM",
+  "nav_button_contact": "BİZE ULAŞIN",
+
+  "contact_main_title": "İLETİŞİM",
+  "contact_intro_text": "Kutol Ambalaj olarak her türlü ambalaj ihtiyacınızda yanınızdayız.",
+
+  "contact_form_title": "Bize Mesaj Bırakın",
+  "contact_form_intro": "Ofset baskılı kutu, sıvama koli, büyük ebatlı ambalaj çözümleri ve özel tasarımlar hakkında bilgi almak, fiyat teklifi istemek veya numune talebinde bulunmak için bize ulaşabilirsiniz.",
+
+  "contact_working_hours_title": "Çalışma Saatlerimiz",
+  "contact_working_hours_text": "Pazartesi - Cuma 09.00 - 18.00",
+  "contact_address_label": "Adres",
+  "contact_phone_label": "Bizi arayın",
+  "contact_email_label": "Mesaj Bırakın",
+
+  "form_placeholder_name": "İsim",
+  "form_placeholder_email": "E-posta Adresiniz",
+  "form_placeholder_phone": "Telefon Numarası",
+  "form_placeholder_message": "Mesajınız",
+  "form_button_send": "Gönder",
+  "form_success_message": "Mesajınız başarıyla gönderildi. Daha fazla mesaj göndermek istiyorsanız bu sayfayı yenileyin.",
+  "form_error_message": "Üzgünüz, formunuzu gönderirken bir hata oluştu.",
+
+  "footer_about_text": "20 yıllık tecrübemizle, büyük ebatlı ve yüksek kaliteli ofset kutu, ofset koli, sıvama kutu ve sıvama koli üretimi yapıyoruz. Marka değerinizi ambalajla büyütmek için buradayız.",
+  "footer_widget_title": "Kutol Ambalaj",
+  "footer_working_hours_title": "Çalışma Saatlerimiz",
+  "footer_working_hours_text": "Pazartesi - Cuma 08.00 - 18.00",
+  "footer_address_title": "Adres",
+  "footer_contact_title": "Mesaj Bırakın"
+}

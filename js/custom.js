@@ -1,93 +1,91 @@
 window.addEventListener('load', function () {
+
+  const menuTriggers = document.querySelectorAll('#mainmenu .menu-item-has-children > span');
+
+  menuTriggers.forEach(span => {
+    span.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      this.classList.toggle('active');
+      
+      const subMenu = this.nextElementSibling;
+      if (subMenu && subMenu.tagName === 'UL') {
+
+        if (subMenu.style.maxHeight) {
+          subMenu.style.maxHeight = null;
+        } else {
+          subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+        }
+      }
+    });
+  });
+
+  const header = document.querySelector('header.header-mobile');
+  
   window.addEventListener('scroll', function () {
     let navbar = document.getElementById('navbarCustom');
+    if (!navbar) return;
+
     let menuItems = navbar.getElementsByClassName('menu-item');
     let btnMain = document.querySelectorAll('.btn-main');
     let hamburger = document.querySelector('#menu-btn');
-
-    let primaryColor = getComputedStyle(document.documentElement)
-      .getPropertyValue('--primary-color')
-      .trim();
-
-    if (hamburger) {
-      hamburger.style.backgroundColor = 'transparent';
-      hamburger.style.borderRadius = '0';
-    }
+    let primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
 
     if (window.scrollY > 50) {
-      navbar.style.backgroundColor = 'white';
+      if(header) header.classList.add('header-light'); 
 
-      for (let item of menuItems) {
-        item.style.color = primaryColor;
-      }
+      navbar.style.backgroundColor = 'white';
+      for (let item of menuItems) { item.style.color = primaryColor; }
 
       btnMain.forEach(function (button) {
         button.style.backgroundColor = 'white';
         button.style.color = primaryColor;
         button.style.border = '1px solid ' + primaryColor;
-
-        button.onmouseover = function () {
-          button.style.backgroundColor = primaryColor;
-          button.style.color = 'white';
-        };
-
-        button.onmouseout = function () {
-          button.style.backgroundColor = 'white';
-          button.style.color = primaryColor;
-        };
+        button.onmouseover = function () { this.style.backgroundColor = primaryColor; this.style.color = 'white';};
+        button.onmouseout = function () { this.style.backgroundColor = 'white'; this.style.color = primaryColor; };
       });
 
       if (hamburger) {
         hamburger.style.color = primaryColor;
-        hamburger.onmouseover = function () {
-          hamburger.style.color = 'white';
-          hamburger.style.backgroundColor = primaryColor;
-          hamburger.style.borderRadius = '50%';
-        };
-        hamburger.onmouseout = function () {
-          hamburger.style.color = primaryColor;
-          hamburger.style.backgroundColor = 'transparent';
-          hamburger.style.borderRadius = '0';
-        };
+        hamburger.onmouseover = function () { this.style.color = 'white'; this.style.backgroundColor = primaryColor; this.style.borderRadius = '50%'; };
+        hamburger.onmouseout = function () { this.style.color = primaryColor; this.style.backgroundColor = 'transparent'; this.style.borderRadius = '0'; };
       }
+
     } else {
+      if(header) header.classList.remove('header-light'); 
+      
       navbar.style.backgroundColor = primaryColor;
 
       for (let item of menuItems) {
-        item.style.color = 'white';
+        const isAltMenuItem = item.closest('li')?.closest('li');
+        
+        if (isAltMenuItem) {
+          if (item.tagName === 'A') {
+            item.style.color = '';
+          } else {
+            item.style.color = 'white';
+          }
+        } else {
+          item.style.color = 'white';
+        }
       }
 
       btnMain.forEach(function (button) {
         button.style.backgroundColor = primaryColor;
         button.style.color = 'white';
         button.style.border = 'none';
-
-        button.onmouseover = function () {
-          button.style.backgroundColor = 'white';
-          button.style.color = primaryColor;
-        };
-
-        button.onmouseout = function () {
-          button.style.backgroundColor = primaryColor;
-          button.style.color = 'white';
-        };
+        button.onmouseover = function () { this.style.backgroundColor = 'white'; this.style.color = primaryColor; };
+        button.onmouseout = function () { this.style.backgroundColor = primaryColor; this.style.color = 'white'; };
       });
 
       if (hamburger) {
         hamburger.style.color = 'white';
-        hamburger.onmouseover = function () {
-          hamburger.style.color = primaryColor;
-          hamburger.style.backgroundColor = 'white';
-          hamburger.style.borderRadius = '50%';
-        };
-        hamburger.onmouseout = function () {
-          hamburger.style.color = 'white';
-          hamburger.style.backgroundColor = 'transparent';
-          hamburger.style.borderRadius = '0';
-        };
+        hamburger.onmouseover = function () { this.style.color = primaryColor; this.style.backgroundColor = 'white'; this.style.borderRadius = '50%'; };
+        hamburger.onmouseout = function () { this.style.color = 'white'; this.style.backgroundColor = 'transparent'; this.style.borderRadius = '0'; };
       }
     }
   });
+
 });
 
 const products = [
@@ -438,7 +436,7 @@ function renderProducts(category) {
         <a href="images/products/${p.image}" class="image-popup d-block hover" title="${p.title}">
           <div class="relative overflow-hidden rounded-10">
             <div class="absolute start-0 w-100 abs-middle fs-36 text-white text-center z-2">
-              <h2 class="mb-0 hover-scale-in-3 font-bold">İncele</h2>
+              <h2 class="mb-0 hover-scale-in-3 font-bold" data-translate="product_view">İncele</h2>
             </div>
             <div class="absolute w-100 h-100 top-0 bg-dark hover-op-05"></div>
             <img src="images/products/${p.image}" class="img-fluid hover-scale-1-2" alt="${p.alt}" />
