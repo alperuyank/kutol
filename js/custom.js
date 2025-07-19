@@ -373,13 +373,6 @@ const products = [
     title: 'Ofset Baskılı Karton Stand 10',
   },
   {
-    id: 41,
-    category: 'stand',
-    image: 'kutol-stand-11.png',
-    alt: 'Ofset Baskılı Karton Stand 11',
-    title: 'Ofset Baskılı Karton Stand 11',
-  },
-  {
     id: 42,
     category: 'stand',
     image: 'kutol-stand-12.png',
@@ -392,20 +385,6 @@ const products = [
     image: 'kutol-stand-13.png',
     alt: 'Ofset Baskılı Karton Stand 13',
     title: 'Ofset Baskılı Karton Stand 13',
-  },
-  {
-    id: 44,
-    category: 'stand',
-    image: 'kutol-stand-14.png',
-    alt: 'Ofset Baskılı Karton Stand 14',
-    title: 'Ofset Baskılı Karton Stand 14',
-  },
-  {
-    id: 45,
-    category: 'stand',
-    image: 'kutol-stand-15.png',
-    alt: 'Ofset Baskılı Karton Stand 15',
-    title: 'Ofset Baskılı Karton Stand 15',
   },
 ];
 
