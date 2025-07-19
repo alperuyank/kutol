@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error(`Could not find or load file: ${jsonPath}`);
             }
             const translations = await response.json();
-            console.log(translations);
 
             // Çevirileri sayfaya uygula
             applyTranslations(translations);

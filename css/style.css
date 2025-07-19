@@ -140,13 +140,20 @@ section.px-4{
   .lang-switcher:hover { color: #fff; }
 
   .hovered:hover {
-    background-color: #f3ea91 !important;
-    color: black;
+    background-color: unset !important;
+    color: black important;
     cursor: pointer;
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease;
   } 
+
+  .square-image {
+    width: 100%;
+    height: 400px;
+    max-width: 400px; 
+  }
+
 
 /* ================================================== */
 
@@ -21182,7 +21189,7 @@ border-radius:20px 0 0 20px;
   header.header-light.header-mobile #mainmenu a.menu-item{
     color:var(--title-font-color);
   }
-
+  /*bak*/
   header.header-mobile #mainmenu a.menu-item:hover {
     background: none;
   }
@@ -21296,10 +21303,6 @@ border-radius:20px 0 0 20px;
     color: #ffffff;
   }
   
-  header.header-mobile #mainmenu li a.menu-item:hover {
-    color: var(--primary-color);
-  }
-
   .dark-scheme header.header-mobile #mainmenu li a.menu-item:hover {
     color: #fff;
   }

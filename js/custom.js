@@ -414,8 +414,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const filename = path.substring(path.lastIndexOf('/') + 1).split('.')[0]; 
 
   let category = '';
-  if (filename === 'boxes') category = 'box';
-  if (filename === 'stands') category = 'stand';
+  if (filename === 'ofset-baskili-sivama-oluklu-mukavva-kutular') category = 'box';
+  if (filename === 'ofset-baskili-sivama-oluklu-mukavva-standlar') category = 'stand';
 
   if (category) {
     renderProducts(category);
